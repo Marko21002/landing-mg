@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const CallToAction = () => {
   return (
-    <section className="overflow-x-clip bg-gradient-to-b from-white to-[#b9b8b8] py-24 overflow-x-clip overflow-y-clip">
+    <section className="bg-gradient-to-b from-white to-[#b9b8b8] py-24 overflow-x-clip">
       <div className="">
         <div className="section-heading relative">
           <h2 className="section-title">Soon in production</h2>
