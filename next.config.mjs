@@ -28,6 +28,25 @@ const nextConfig = {
     return config;
   },
 
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "assets.aceternity.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "chatgpt.com",
+        pathname: "/**",
+      },
+    ],
+  },
   // ...other config
 };
 

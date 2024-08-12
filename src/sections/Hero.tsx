@@ -1,6 +1,6 @@
 "use client";
 import ArrowIcon from "@/assets/arrow-right.svg";
-import cogImage from "@/assets/clouds.webp";
+import cogImage from "@/assets/eth.png";
 import cylinderImage from "@/assets/backpack.png";
 import noodleImage from "@/assets/wifi.png";
 import Image from "next/image";
@@ -11,6 +11,7 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import { useRef } from "react";
+import { Cover } from "@/components/ui/cover";
 
 export const Hero = () => {
   const heroRef = useRef(null);
@@ -28,17 +29,21 @@ export const Hero = () => {
       <div className="md:pl-24">
         <div className="md:flex items-center ">
           <div className="md:w-[478px]">
-            <div className="tag">Version 1.0 is here</div>
+            <div className="tag">Currently in private beta</div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#1d1220] text-transparent bg-clip-text mt-6">
               MoneyGlitch
             </h1>
             <p className="text-xl text-[#010D3E] tracking-tight mt-6">
-              Celebrate the joy of a study/monetization with an app designed for
-              a trading content creation,communication with you followers and
-              many more for your success
+              Create your own blog and start earning with subscription-based
+              payments. Share exclusive content, engage with your audience, and
+              monetize your work—all in one place.
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
-              <button className="btn btn-primary">Get for free</button>
+              <button className="btn btn-primary">
+                <a href="https://amazing-english-997431.framer.app/">
+                  Join waitlist
+                </a>
+              </button>
               <button className="btn btn-text gap-1">
                 <span>Learn more</span>
                 <ArrowIcon className="h-5 w-5" />
