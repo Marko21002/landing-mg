@@ -6,7 +6,7 @@ import { Cover } from "./ui/cover";
 
 export function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => (
-    <Card key={card.title} card={card} index={index} />
+    <Card key={card.src} card={card} index={index} />
   ));
 
   return (
