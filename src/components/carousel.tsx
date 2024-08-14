@@ -2,9 +2,6 @@
 import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
-import MgImage from "@/assets/mg.webp";
-import BackImage from "@/assets/backpack.png";
-import CreatorImage from "@/assets/creator-blog.webp";
 import { Cover } from "./ui/cover";
 
 export function AppleCardsCarouselDemo() {
@@ -89,13 +86,13 @@ const data = [
   {
     category: "About us",
     title: "What is MoneyGlitch?",
-    src: MgImage,
+    src: "/mg.webp",
     content: <Content1 />,
   },
   {
     category: "Content Creator",
     title: "How to join us as a Content Creator?",
-    src: CreatorImage,
+    src: "/creator-blog.webp",
     content: <Content2 />,
   },
 ];
