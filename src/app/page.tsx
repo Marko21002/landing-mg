@@ -25,7 +25,7 @@ export default function Home() {
       <AppleCardsCarouselDemo></AppleCardsCarouselDemo>
       <LampDemo></LampDemo>
       <Form></Form>
-      <CallToAction></CallToAction>
+      {/* <CallToAction></CallToAction> */}
       <Example></Example>
     </>
   );

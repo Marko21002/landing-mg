@@ -22,12 +22,7 @@ const creatorFeatures = [
       "You own your content, and our platform gives you the control to decide how and when to monetize it.",
     icon: "🔑",
   },
-  {
-    name: "Engage Your Audience: ",
-    description:
-      "Build a loyal community with tools that allow you to interact directly with your subscribers and keep them engaged.",
-    icon: "💬",
-  },
+
   {
     name: "Analytics Insights: ",
     description:
@@ -52,7 +47,7 @@ const consumerFeatures = [
   {
     name: "Connect with Creators: ",
     description:
-      "Interact directly with content creators through comments, messages, and special requests.",
+      "Possibility to interact with influencers more closely then in other social media apps",
     icon: "🤝",
   },
   {

@@ -6,7 +6,7 @@ import { headers } from "next/headers";
 
 export const Navbar = () => {
   return (
-    <header className="sticky top-0 backdrop-blur-sm z-20 overflow-x-clip">
+    <header className="sticky top-0  z-20 overflow-x-clip">
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
         <p className="text-white/60 hidden md:block ">
           Streamline your content monetization
@@ -17,17 +17,7 @@ export const Navbar = () => {
         </div>
       </div>
       <div className="py-5">
-        <div className="px-2 md:px-10">
-          <div className="flex items-center justify-between">
-            <Image src={Logo} alt="Saas logo" height={40} width={40}></Image>
-            <MenuIcon className="h-5 w-5 md:hidden" />
-            <nav className="hidden md:flex gap-6 text-black/60 items-center">
-              <button className="bg-black text-white px-4 py-2 rounded-lg items-center font-medium inline-flex justify-center tracking-tight">
-                Get for free
-              </button>
-            </nav>
-          </div>
-        </div>
+        <div className="px-2 md:px-10"></div>
       </div>
     </header>
   );
