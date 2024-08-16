@@ -1,3 +1,5 @@
+"use client";
+import { useRef } from "react";
 import { AppleCardsCarouselDemo } from "@/components/carousel";
 import { VelocityScroll } from "@/components/scrolltext";
 import { LampDemo } from "@/components/ui/lamp";
@@ -7,26 +9,35 @@ import Example from "@/sections/Footer";
 import Form from "@/sections/Form";
 import { Navbar } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";
-import { Pricing } from "@/sections/Pricing";
-import { ProductShowcase } from "@/sections/ProductShowcase";
 
 export default function Home() {
+  const formRef = useRef<HTMLDivElement>(null);
+
+  const scrollToForm = () => {
+    formRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
-      <Navbar></Navbar>
-      <Hero></Hero>;
+      {/* Pass the scrollToForm function to the Navbar */}
+      <Navbar scrollToForm={scrollToForm} />
+      <Hero />
       <VelocityScroll
         text="Create and Monetize"
         default_velocity={3}
         className="opacity-60 font-display text-center text-2xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-5xl md:leading-[5rem]"
       />
-      {/* <ProductShowcase></ProductShowcase> */}
-      <Feature></Feature>
-      <AppleCardsCarouselDemo></AppleCardsCarouselDemo>
-      <LampDemo></LampDemo>
-      <Form></Form>
-      <CallToAction></CallToAction>
-      <Example></Example>
+      <Feature />
+      <AppleCardsCarouselDemo />
+      <LampDemo />
+
+      {/* Attach the ref to the div wrapping the Form component */}
+      <div ref={formRef}>
+        <Form />
+      </div>
+
+      <CallToAction />
+      <Example />
     </>
   );
 }
