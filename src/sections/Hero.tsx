@@ -24,7 +24,7 @@ export const Hero = () => {
   return (
     <section
       ref={heroRef}
-      className="pt-8 pb-20 md:pt-5 md:pb-10  overflow-x-clip"
+      className="pt-8 p-4 pb-20 md:pt-5 md:pb-10  overflow-x-clip"
     >
       <div className="md:pl-24">
         <div className="md:flex items-center ">
