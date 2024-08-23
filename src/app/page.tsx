@@ -9,6 +9,7 @@ import Example from "@/sections/Footer";
 import Form from "@/sections/Form";
 import { Navbar } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";
+import LetsMakeThingsHappenSection from "@/sections/lets-make-thing-happen";
 
 export default function Home() {
   const formRef = useRef<HTMLDivElement>(null);
@@ -32,11 +33,11 @@ export default function Home() {
       <LampDemo />
 
       {/* Attach the ref to the div wrapping the Form component */}
-      <div ref={formRef}>
-        <Form />
-      </div>
+      <div ref={formRef}>{/* <Form /> */}</div>
 
-      <CallToAction />
+      <section className="my-10 md:py-20 xl:w-4/5 2xl:w-[68%] md:mx-auto">
+        <LetsMakeThingsHappenSection />
+      </section>
       <Example />
     </>
   );

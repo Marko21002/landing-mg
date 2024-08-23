@@ -39,9 +39,9 @@ export const Hero = () => {
               monetize your work—all in one place.
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
-              <button className="btn btn-primary">
-                <a href="https://amazing-english-997431.framer.app/">
-                  Join waitlist
+              <button className="btn btn-primary ">
+                <a href="/meeting" target="_blank">
+                  Book a Call
                 </a>
               </button>
               <button className="btn btn-text gap-1">
